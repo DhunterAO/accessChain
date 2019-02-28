@@ -1,0 +1,8 @@
+from util.fastkey import FastKey
+from util.tool import verify_signature
+
+pk = 'ec4955f84daaff17f0a2584b1995c10a1722d0a6d380eeaa1697e44176e57a95af95c8854dea9fbe6dda83900752a019cfda47694c1dcdae3288395c3c0859b6'
+m = '03599994f2cacbf4a90af3d0229fe32e08e71e9c1e5a4c550975e7217e4065d5'
+signature = '71fc0d20fd360d4c00c77b88e4002ba48e77c163bf9c114db50302e4e17f9be28e8070f59a4cb3ea6cacb809d79cb7c496ef78cc0ec6407d2e88e5e1d98e426'
+
+print(verify_signature(pk, m, signature))
